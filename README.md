@@ -1,10 +1,10 @@
-#  Summer Assistant
+# ☀️ Summer Assistant
 
 **Summer Assistant** est une application Linux créée en **C++ avec Qt** permettant de lancer rapidement des applications depuis une interface graphique simple et personnalisable.
 
-##  Description
+## 📌 Description
 
-Summer Assistant est un petit launcher d'applications avec une interface personnalisée.
+Summer Assistant est un launcher d'applications avec une interface personnalisée.
 
 Le projet est **open source** : vous pouvez le modifier, l'améliorer et créer votre propre version.
 
@@ -20,23 +20,23 @@ Vous pouvez :
 
 Ce projet est conçu pour :
 
-* Debian
-* Ubuntu
-* Linux Mint
+* Debian / Ubuntu
+* Fedora
 * Arch Linux
+* Linux Mint
 * Autres distributions Linux
 
 ## 🔧 Personnaliser les applications
 
 Les applications lancées par les boutons peuvent être changées facilement dans le code.
 
-Par exemple, pour lancer Visual Studio Code :
+Exemple avec Visual Studio Code :
 
 ```cpp
 QProcess::startDetached("code");
 ```
 
-Si vous utilisez un autre éditeur ou logiciel, remplacez simplement la commande.
+Si vous utilisez un autre logiciel, remplacez simplement la commande.
 
 Exemples :
 
@@ -52,7 +52,7 @@ QProcess::startDetached("gedit");
 
 pour Gedit.
 
-Pour connaître la commande d'une application installée sur Linux :
+Pour trouver la commande d'une application sur Linux :
 
 ```bash
 command -v nom_du_programme
@@ -64,38 +64,26 @@ Exemple :
 command -v firefox
 ```
 
-##  Installation
-
-Installez les dépendances Qt :
-
-### Debian / Ubuntu
-
-```bash
-sudo apt install qt6-base-dev
-sudo apt install g++
-```
-## Fedora
-
-```bash
-sudo dnf install qt6-base-devel
-sudo dnf install g++
-````
-## Arch
-
-```bash
-sudo pacman -S gt6-base-devel
-sudo pacman -S g++
-```
+## 📦 Installation
 
 Clonez le projet :
 
 ```bash
 git clone https://github.com/unnread/Automatisation-Linux-Cpp.git
+
+cd Automatisation-Linux-Cpp
 ```
 
-Ouvrez ensuite le projet avec Qt Creator ou compilez-le avec votre environnement C++.
+Puis lancez le script d'installation :
 
-##  Contribution
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+Le script installe automatiquement les dépendances nécessaires selon votre distribution Linux.
+
+## 🤝 Contribution
 
 Les contributions sont les bienvenues.
 
@@ -112,7 +100,7 @@ Créé par **Youness Telmoune**
 
 Projet développé en **C++ avec Qt pour Linux**.
 
-##  Licence
+## 📜 Licence
 
 Ce projet est open source.
 
