@@ -8,16 +8,17 @@ if command -v apt >/dev/null 2>&1; then
 
     sudo apt update
     sudo apt install -y qt6-base-dev qt6-base-dev-tools build-essential git
+    sudo apt install  pkg-config
 
 elif command -v dnf >/dev/null 2>&1; then
     echo " Distribution Fedora détectée"
 
-    sudo dnf install -y qt6-qtbase-devel gcc-c++ git make
+    sudo dnf install -y qt6-qtbase-devel gcc-c++ git make pkg-config
 
 elif command -v pacman >/dev/null 2>&1; then
     echo " Distribution Arch détectée"
 
-    sudo pacman -Sy --needed qt6-base gcc git make
+    sudo pacman -Sy --needed qt6-base gcc git make pkg-config
 
 else
     echo " Distribution non supportée"
