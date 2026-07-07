@@ -70,8 +70,7 @@ Clonez le projet :
 
 ```bash
 git clone https://github.com/unnread/Automatisation-Linux-Cpp.git
-
-cd Automatisation-Linux-Cpp
+cd Automatisaion-Linux-Cpp
 ```
 
 Puis lancez le script d'installation :
@@ -112,3 +111,4 @@ Vous êtes libre de :
 * Partager vos améliorations
 
 Merci de conserver la mention de l'auteur original.
+
